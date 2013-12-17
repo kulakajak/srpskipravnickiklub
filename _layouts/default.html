@@ -15,6 +15,8 @@
         <!-- Custom CSS 
         <link rel="stylesheet" href="/css/main.css"> -->
 
+        <link rel="stylesheet" href="/css/spk.css">
+
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
 
@@ -26,30 +28,36 @@
 
     </head>
     <body>
-
-        <div class="site">
-          <div class="jumbotron">
-            <h1 >{{ site.name }}</h1>
-            <a class="extra" href="/">вести</a>
-          </div>
+      <nav class="navbar navbar-default navbar-inverse" role="navigation">
+        <div class="navbar-container">
+          <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+           <i class="fa fa-bars"></i>
+           </button>
+           <a class="navbar-brand" href="/">{{ site.name }}</a> 
+          </div> 
+        </div>
+        <div id="nav-collapse" class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a title="Сазнајте више о нашим активностима" class="scroll brand-1" href="/">Активности</a></li>
+          <li><a title="Прочитајте вести" href="/vesti">Вести</a></li>
+          <li><a title="Контактирајте нас" href="/kontakt">Контакт</a></li>
+        </ul>
+      </div>
+      </nav>
+      <div class="container">
 
           {{ content }}
 
-          <div class="footer">
-            <div class="contact">
-              <p>
-                СРПСКИ ПРАВНИЧКИ КЛУБ<br />
-                НОВИ САД<br />
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="http://srpskipravnickiklub.rs">srpskipravnickiklub.rs</a><br />
-                <a href="mailto:kontakt@srpskipravnickiklub.rs">kontakt@srpskipravnickiklub.rs</a><br />
-              </p>
-            </div>
-          </div>
-        </div>
+      </div>
 
+      <hr class="featurette-divider">
+      <div id="footer">
+        <p>
+         © 2013 <a href="http://srpskipravnickiklub.rs">СРПСКИ ПРАВНИЧКИ КЛУБ</a>. Сва права задржана
+        </p>
+       </div>
+      </div>
     </body>
 </html>

@@ -11,6 +11,10 @@ module Jekyll
       format = (format=~ /^:(\w+)/) ? $1.to_sym : format
       I18n.l input, :format => format
     end
+    def translate(input)
+      load_translations
+      I18n.t input
+    end
     def load_translations
       unless I18n::backend.instance_variable_get(:@translations)
         I18n.backend.load_translations Dir[File.join(File.dirname(__FILE__),'../_locales/*.yml')]

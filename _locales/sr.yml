@@ -1,4 +1,9 @@
 sr:
+  vesti: Вести
+  clanci: Чланци
+  aktivnosti: Активности
+  ciljevi: Циљеви
+  kontakt: Контакт
   date:
     abbr_day_names:
     - Нед

@@ -25,30 +25,27 @@
 
         <link rel="stylesheet" href="/css/spk.css">
 
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-
     </head>
     <body>
       <nav class="navbar navbar-default navbar-inverse" role="navigation">
-        <div class="navbar-container">
           <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-          <span class="sr-only">Toggle navigation</span>
-           <i class="fa fa-bars"></i>
-           </button>
-           <a class="navbar-brand" href="/">{{ site.name }}</a> 
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>  
+            </button>
+            <a class="navbar-brand" href="/">{{ site.name }}</a> 
           </div> 
+          <div id="nav-collapse" class="collapse navbar-collapse navbar-ex1-collapse" role="navigation">
+            <ul class="nav navbar-nav navbar-right">
+              <li ><a title="Сазнајте више о нашим активностима" href="/aktivnosti">Активности</a></li>
+            <li><a title="Прочитајте вести" href="/vesti">Вести</a></li>
+            <li><a title="Наши чланци" href="/clanci">Чланци</a></li>
+      <li ><a title="Сазнајте више о нашим циљевима" href="/ciljevi" role="navigation">Циљеви</a></li>
+            <li><a title="Контактирајте нас" href="/kontakt">Контакт</a></li>
+          </ul>
         </div>
-        <div id="nav-collapse" class="collapse navbar-collapse navbar-ex1-collapse" role="navigation">
-          <ul class="nav navbar-nav navbar-right">
-            <li ><a title="Сазнајте више о нашим активностима" href="/aktivnosti">Активности</a></li>
-          <li><a title="Прочитајте вести" href="/vesti">Вести</a></li>
-          <li><a title="Наши чланци" href="/clanci">Чланци</a></li>
-	  <li ><a title="Сазнајте више о нашим циљевима" href="/ciljevi" role="navigation">Циљеви</a></li>
-          <li><a title="Контактирајте нас" href="/kontakt">Контакт</a></li>
-        </ul>
-      </div>
       </nav>
       <div class="container">
 
@@ -73,5 +70,11 @@
       ga('send', 'pageview');
 
     </script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
   </body>
 </html>

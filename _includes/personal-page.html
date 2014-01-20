@@ -1,13 +1,23 @@
 <h1>
 {{ site.data.authors[include.author].full-name }}
 </h1>
-<ul class="posts">
-{% for page in site.categories.clanci %}
-  {% if page.author == include.author %} 
-    <li>
-    {% include date-source-author.html disable-author-link='' %}
-      &raquo; <a href="{{ page.url }}">{{ page.title }}</a>
-    </li>
-  {% endif %}
-{% endfor %}
-</ul>
+<div class="row">
+  <div class="col-sm-3">
+    <img src="/assets/photos/{{ include.author }}.jpg" class="img-rounded" height="200px"/> <!--- TODO image size should be responsive -->
+  </div>
+  <div class="col-sm-9">
+    <h3>
+        Чланци:
+    </h3>
+    <ul class="posts">
+    {% for page in site.categories.clanci %}
+      {% if page.author == include.author %} 
+        <li>
+        {% include date-source-author.html disable-author-link='' %}
+          &raquo; <a href="{{ page.url }}">{{ page.title }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+  </div>
+</div>

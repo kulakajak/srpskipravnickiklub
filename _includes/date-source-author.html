@@ -1,0 +1,12 @@
+{{ page.date | date: "%-d.%m.%Y." }} 
+{% if page.source != nill %}
+{{ site.data.sources[page.source].full-name }} 
+{% endif %}
+{% if page.author != nill %}
+  {% if include.disable-author-link != nill %}
+  {% else %}
+  &sdot;
+<a href="/{{ site.data.authors[page.author].folder }}">{{ site.data.authors[page.author].full-name }}</a>
+  {% endif %}
+{% endif %}
+

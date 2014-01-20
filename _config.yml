@@ -1,3 +1,4 @@
 name: "СРПСКИ ПРАВНИЧКИ КЛУБ"
 markdown: redcarpet
 pygments: true
+permalink: pretty

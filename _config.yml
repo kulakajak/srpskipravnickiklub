@@ -1,4 +1,7 @@
 name: "СРПСКИ ПРАВНИЧКИ КЛУБ"
+description: Српски Правнички Клуб СПК је основан ...
+author: SPK
+url: http://srpskipravnickiklub.rs
 markdown: redcarpet
 pygments: true
 permalink: pretty

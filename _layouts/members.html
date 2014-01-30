@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<h1>
+{{ site.data.authors[page.author].full-name }}
+</h1>
+<div class="row">
+  <div class="col-sm-3">
+    <img src="/assets/photos/{{ page.author }}.jpg" class="img-rounded" height="200px"/> <!--- TODO image size should be responsive -->
+  </div>
+  <div class="col-sm-9">
+   {{ content }}
+  </div>
+</div>
+<h3>
+    Чланци:
+</h3>
+<ul class="posts">
+{% assign author=page.author %}
+{% for page in site.categories.clanci %}
+  {% if page.author == author %}
+    <li>
+    {% include date-source-author.html disable-author-link='' %}
+      &raquo; <a href="{{ page.url }}">{{ page.title }}</a>
+    </li>
+  {% endif %}
+{% endfor %}
+</ul>
+<h3>
+  Књиге:
+</h3>
+<ul class="books">
+{% for book in site.data.authors[page.author].books %}
+    <li>
+      {{ book }}
+    </li>
+{% endfor %}
+</ul>

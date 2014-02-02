@@ -19,12 +19,12 @@ layout: default
 <h1 class="center text-center">Чланови СПК:</h1>
 
 <div class="row">
-  {% assign members="slobodan vladan dragutin" | split: ' ' %}
+  {% assign members="slobodan vladan dragutin darko" | split: ' ' %}
   {% for mem in members %}
-  <div class="col-sm-4">
+  <div class="col-sm-3">
     <a href="/clanovi/{{site.data.authors[mem].folder}}">
       <p>
-        <img class="img-responsive img-thumbnail img-rounded" src="/assets/photos/{{ mem }}.jpg" >
+        <img class="img-thumbnail img-rounded" src="/assets/photos/{{ site.data.authors[mem].folder }}.jpg" >
       </p>
       <h4>
         {{ site.data.authors[mem].full-name }}

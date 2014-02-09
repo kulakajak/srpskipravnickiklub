@@ -5,5 +5,3 @@ url: http://srpskipravnickiklub.rs
 markdown: redcarpet
 pygments: true
 permalink: pretty
-paginate: 5
-paginate_path: "clanci/page:num"

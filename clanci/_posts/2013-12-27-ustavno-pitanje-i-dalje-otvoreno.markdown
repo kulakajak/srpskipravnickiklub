@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Уставно право и даље отворено"
+title:  "Уставно питање и даље отворено"
 author: vladan
 source: pecat
 link: http://www.pecat.co.rs/2013/12/ustavno-pitanje-i-dalje-otvoreno/

@@ -18,7 +18,7 @@ layout: default
 <ul class="posts">
 {% assign author=page.author %}
 {% for page in site.categories.clanci %}
-  {% if page.author == author %}
+  {% if author == page.author or page.author contains author %}
     <li>
     {% include date-source-author.html disable-author-link='' %}
       &raquo; <a href="{{ page.url }}">{{ page.title }}</a>

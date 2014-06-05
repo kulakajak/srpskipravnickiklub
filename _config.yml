@@ -6,3 +6,6 @@ url: http://srpskipravnickiklub.rs
 markdown: redcarpet
 pygments: true
 permalink: pretty
+
+sitemap:
+  file: "sitemap.xml"

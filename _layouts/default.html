@@ -5,10 +5,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>{% if page.title != site.name%} СПК | {% endif %} 
 		{% if page.categories != null %} {{ page.categories|translate}} | {% endif %}
+                {% for author in page.author %} {{ site.data.authors[author].full-name }}, {% endfor %}
 		{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
         <meta name="google" content="notranslate" />
         <meta http-equiv="Content-Language" content="sr" />
+        <meta name="keywords" content="{{ site.keywords }} {{ page.keywords }}" >
+        <meta name="description" content="{{ site.description }}" >
+        <meta name="author" content="{{ site.author }}" >
+
 
 
         <!-- syntax highlighting CSS 

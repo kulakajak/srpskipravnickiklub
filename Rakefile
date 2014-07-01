@@ -2,6 +2,7 @@
 require "jekyll"
 require 'tmpdir'
 
+task :default => "blog:publish"
 # Github pages publishing.
 namespace :blog do
   #

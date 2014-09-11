@@ -3,4 +3,9 @@ SPK
 instalation
 ===========
 
+deployment
+===
+
+    rake
+
 

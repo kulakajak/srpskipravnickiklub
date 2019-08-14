@@ -2,10 +2,7 @@ name: СРПСКИ ПРАВНИЧКИ КЛУБ СПК
 description: Српски правнички клуб (СПК) је удружење које ће анализирати проблеме српске јавноправне сцене и покушати да врши утицај, са позиција науке и струке, на носиоце политичке власти. Ово удружење требало би да се разликује од типично академских удружења која се на апстрактан начин баве актуелним правним темама, без претензије да утичу на процесе политичког одлучивања и доношење правних аката.
 keywords: спк, српски правнички клуб
 author: Српски правнички клуб СПК
-url: http://srpskipravnickiklub.rs
-markdown: redcarpet
-pygments: true
-permalink: pretty
-
-sitemap:
-  file: "sitemap.xml"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://spk.trk.in.rs" # the base hostname & protocol for your site, e.g. http://example.com
+# sitemap:
+#   file: "sitemap.xml"
